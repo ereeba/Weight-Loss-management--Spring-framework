@@ -1,0 +1,61 @@
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url('/image/weightLossHealth.jpg') no-repeat center center fixed;
+     background-size: cover;
+     margin: 0;
+     padding: 0;
+     color: #333;
+ }
+
+
+
+ table {
+     width: 70%;
+     margin: 20px auto;
+     border-collapse: collapse;
+     background-color: rgba(255, 255, 255, 0.95);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ th, td {
+     padding: 12px;
+     text-align: center;
+     border: 1px solid #ccc;
+ }
+
+ th {
+     background-color: #2e86de;
+     color: white;
+ }
+
+ tr:nth-child(even) {
+     background-color: #f9f9f9;
+ }
+
+ a {
+     color: #2e86de;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ div {
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .pagination {
+     margin-top: 10px;
+ }
+
+ .pagination a {
+     margin: 0 10px;
+     color: #2e86de;
+ }
+
+ .pagination a:hover {
+     text-decoration: underline;
+ }

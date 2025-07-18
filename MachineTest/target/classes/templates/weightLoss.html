@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weight Loss Check</title>
+	<link rel="stylesheet" type="text/css" href="/css/headerStyle.css">
+	<link rel="stylesheet" type="text/css" href="/css/weightLoss.css">
+
+	<style>
+	
+	</style>
+
+
+</head>
+<body>
+	<header>
+		        <h1>Weight Loss Tracker</h1>
+		        <nav>
+		          
+					<a href="/logout" th:href="@{/logout}">Logout</a>
+		        </nav>
+		    </header>
+			<h1 style="text-align: center;margin-top: 30px;color: #2e86de;">Check Weight Loss Between Dates</h1style="text-align: center;margin-top: 30px;color: #2e86de;">
+
+			<form th:action="@{/weight/loss}" method="get">
+			    <label for="startDate">Start Date:</label>
+			    <input type="date" name="startDate" required>
+
+			    <label for="endDate">End Date:</label>
+			    <input type="date" name="endDate" required>
+
+			    <button type="submit">Check</button>
+			</form>
+
+			<div class="result-section" th:if="${loss != null}">
+			    <h2 th:text="'You started at: ' + ${startWeight} + ' kg'"></h2>
+			    <h2 th:text="'You ended at: ' + ${endWeight} + ' kg'"></h2>
+			    <h2 th:text="'You lost: ' + ${loss} + ' kg'"></h2>
+			</div>
+
+			<div class="message" th:if="${message}">
+			    <p th:text="${message}"></p>
+			</div>
+
+			<div style="text-align: center; margin-top: 20px;font-size: medium;">
+				    	<a href="/weight/list"><b>Back to List</b></a>
+				</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

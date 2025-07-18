@@ -1,0 +1,27 @@
+/* Header and Navigation Styles */
+header {
+    background: rgb(255, 128, 192);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Used in registration page, add if you want larger text */
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #d1e7ff; /* Lighter blue on hover */
+    text-decoration: underline;
+}

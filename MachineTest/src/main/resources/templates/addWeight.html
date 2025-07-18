@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Add Weight</title>
+	<link rel="stylesheet" type="text/css" href="/css/headerStyle.css">
+	<link rel="stylesheet" type="text/css" href="/css/addWeight.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Weight Loss Tracker</h1>
+		<nav>
+	
+			<a href="/logout" th:href="@{/logout}">Logout</a>
+		</nav>
+	</header>
+	<h1 style="text-align: center;margin-top: 30px;color: #2e86de;">Add Today's Weight</h1>
+
+	<div th:if="${error}" style="color:red;text-align: center">
+		<p th:text="${error}"></p>
+	</div>
+	<div th:if="${success}" style="color:green;">
+		<p th:text="${success}"></p>
+	</div>
+
+	<form th:action="@{/weight/add}" method="post" th:object="${weight}">
+		<label for="weight">Weight (kg):</label>
+		<input type="number" step="0.1" min="0" th:field="*{weight}" required>
+		<button type="submit">Submit</button>
+	</form>
+	<br>
+
+	<div style="text-align: center; margin-top: 20px;">
+	    	<a href="/weight/list"><b>Weights List</b></a>
+	</div>
+</body>
+
+</html>
