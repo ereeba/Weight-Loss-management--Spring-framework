@@ -32,7 +32,7 @@ The **Weight-Loss Management System** is a Java-based web application built usin
 ### Prerequisites
 
 - Java 17+
-- Maven or Gradle
+- Spring framework
 - MySQL
 - Git
 
