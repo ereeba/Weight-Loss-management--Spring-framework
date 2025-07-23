@@ -1,10 +1,9 @@
-# Weight-Loss-management--Spring-framework
 
 # Weight-Loss Management System (Spring Framework)
 
 ## 📋 Overview
 
-The **Weight-Loss Management System** is a Java-based web application built using the **Spring Framework**. It provides a platform for users to manage their weight-loss journey through goal tracking, progress monitoring, and more. The system is designed with modularity, scalability, and best practices in mind using Spring Boot, Spring MVC, and Spring Data JPA.
+The **Weight-Loss Management System** is a Java-based web application built using the **Spring Framework**. It provides a platform for users to manage their weight-loss journey through goal tracking and progress monitoring. The system is designed with modularity, scalability, and best practices in mind using Spring Boot, Spring MVC, and Spring Data JPA.
 
 ---
 
